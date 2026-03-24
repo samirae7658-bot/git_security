@@ -1,25 +1,22 @@
-# Environment variables
+# جلوگیری از ارسال فایل‌های محیطی
 .env
 .env.*
 
-# Node modules (if using Node.js)
-node_modules/
+# فایل‌های حساس
+*.key
+*.pem
 
 # Python
 __pycache__/
 *.pyc
 
-# Logs
+# لاگ‌ها
 *.log
 
-# OS files
-.DS_Store
+# فایل‌های سیستم
 Thumbs.db
+.DS_Store
 
-# IDE files
+# تنظیمات IDE
 .vscode/
 .idea/
-
-# Secrets
-*.key
-*.pem

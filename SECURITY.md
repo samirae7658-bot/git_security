@@ -54,3 +54,29 @@ DB_PASSWORD=your_password
 In code (Python example):
 import os
 api_key = os.getenv("API_KEY")
+
+## Environment Variables Security
+
+### What is a .env file?
+A `.env` file is used to store sensitive configuration such as:
+- API keys
+- Database passwords
+- Secret tokens
+
+### Best Practices
+
+- Never commit `.env` files to Git
+- Always include `.env` in `.gitignore`
+- Use environment variables instead of hardcoding secrets
+- Keep different `.env` files for development and production
+- Rotate sensitive keys regularly
+
+### Example
+
+.env file:
+API_KEY=your_api_key_here
+DB_PASSWORD=your_password
+
+Python usage:
+import os
+api_key = os.getenv("API_KEY")
